@@ -1,5 +1,5 @@
-html {
-    box-sizing: border-box;
+h1, h2, p, li {
+    font-family: 'Georgia',serif;
 }
 
 
@@ -9,9 +9,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
-
+h2, p {
+    padding: 0;
+    margin: 0;
+}
 
 .container-2,
 .container-3,
@@ -19,32 +23,54 @@ body {
     flex-grow: 1;
 }
 
-.container-1 {
+/* .container-1 {
     flex-grow: 0;
-}
+} */
 
 .footer {
     flex-grow: 0;
     color: #e5e7eb;
+    text-align: center;
 }
 
 .container-2-1 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 280px;
+    margin: 10px 280px;
+    gap: 20px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 10px 140px;
     /* padding: 10px 30px;  */
     /* margin: 20px; */
 }
 
-/* .content-1 {
-    padding: 5px 15px;
-    margin: 20px; 
-} */
+.content-1 {
+   display: flex;
+   padding: 50px 140px;
+   justify-content: space-between;
+} 
+
+.combo-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#imgcontent {
+    width: 400px;
+    height: 160px;
+    background-color: #e5e7eb;
+    text-align: center;
+   
+}
+
+.text.hero {
+    max-width: 600px;
+}
 
 .text.list {
     display: flex;
@@ -78,9 +104,9 @@ button,
 .images {
     border: 2px solid #3882f6;
     border-radius: 7px;
-    padding: 30px;
-    width: 30px;
-    height: 30px;
+    /* padding: 30px; */
+    width: 90px;
+    height: 90px;
 }
 
 h1 {
@@ -108,13 +134,14 @@ h1 {
     font-size: 36px;
     font-weight: 900;
     padding: 0;
-    margin: 10px;
+    margin: 25px 0px;
     text-align: center;
     
 }
 
 .container-3 {
     background-color: #e5e7eb;
+    padding: 0px 300px;
 }
 
 blockquote {
@@ -123,23 +150,25 @@ blockquote {
     font-size: 36px;
 }
 
-.container-4 {
-    background-color: white;
-    padding: 20px
+figcaption {
+    text-align: right;
+    font-weight: bold;
 }
 
-h2 {
-    padding: 0;
-    margin: 0;
+.container-4 {
+    background-color: white;
+    /* margin: 100px 300px; */
+    padding: 70px 250px;
 }
 
 .imgtext {
     color: #1f2937;
     text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
     /* padding: 0px 20px;
     margin: 8px; */
-    
-    
+     
 }
 
 .img1,
@@ -149,4 +178,27 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border: 1px solid white;
+    padding: 0px 10px;
+}
+
+.cta2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#lastpara {
+    padding: 30px 10px;
 }
